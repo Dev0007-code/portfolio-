@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <header>
+    
+      <div class="logo">Devendra Kumar<br>Web Developer & Web Designer</div>
+      <nav>
+      <ul class="nav-links">
+        <li><a href="#home">About</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+<section id="home"><h6>Welcome to My Portfolio</h6>
+        <p>Hi, I’m Devendra Kumar — a passionate Web Developer and Web Designer. I love turning ideas into functional, user-friendly, and visually appealing websites. My goal is to craft digital experiences that not only look great but also perform seamlessly across all devices.</p>
+
+    </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p><b>Objective:</b> Hi, I’m a passionate Web Designer and Web Developer dedicated to creating clean, modern, and user-friendly digital experiences. I enjoy transforming ideas into responsive, functional, and visually appealing websites that deliver real value to users.
+With expertise in front-end development (HTML, CSS, JavaScript, React) and back-end integration (Node.js, Express, databases), I bridge the gap between design and development. On the design side, I work with Figma, Adobe XD, and Photoshop to craft intuitive interfaces that enhance user journeys.
+I believe a great website is more than just code—it’s about performance, usability, and aesthetics. My focus is on writing clean, efficient code and designing with attention to detail, ensuring every project is both technically strong and visually impactful.
+When I’m not coding or designing, I’m usually exploring new tools, learning emerging technologies, and experimenting with creative solutions to deliver better digital products.</p>
+
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Node.js</li>
+      <li>Python, Java</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+        <h1>Projects</h1>
+        <table border="1">
+            <tr>
+                <th>Project Name</th>
+                <th>Technology</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Winsploit</td>
+                <td>Python, Telegram Bot</td>
+                <td>2024</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Malaria Detection</td>
+                <td>Python, TensorFlow</td>
+                <td>2024</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Portfolio Website</td>
+                <td>HTML, CSS</td>
+                <td>2025</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>E-Commerce App</td>
+                <td>React, Node.js</td>
+                <td>2025</td>
+                <td>Ongoing</td>
+            </tr>
+        </table>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Admin Login -->
+  <section id="admin">
+    <h1>Admin Login</h1>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+  <script src="script.js"></script>
+  <!--responses -->
+<section id="responses" class="hidden">
+  <h1>User Responses</h1>
+  <div id="responseList"></div>
+</section>
+
+</body>
+</html>

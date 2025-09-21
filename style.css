@@ -1,0 +1,207 @@
+
+:root {
+  --bg-color: #f0f4ff;
+  --text-color: #222;
+  --primary-color: #0077ff;
+  --card-bg: #ffffff;
+  --nav-text: #111;
+}
+
+body.dark {
+  --bg-color: #0d1117;
+  --text-color: #f0f4ff;
+  --primary-color: #2385e6;
+  --card-bg: #161b22;
+  --nav-text: #fff;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.4s, color 0.4s;
+  line-height: 1.6;
+}
+
+/* Background in light mode with pattern */
+body:not(.dark) {
+  background: linear-gradient(135deg, #e6f0ff, #ffffff);
+  background-attachment: fixed;
+
+}
+
+/* Smooth scroll fix */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* =======================
+   Navbar
+======================= */
+header {
+  background: linear-gradient(135deg, #6ec6ff, #f32148);
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  display: flex;
+    justify-content: space-between; /* Logo left, nav right */
+    align-items: center;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+/*  max-width: 1000px;
+  margin: auto;*/
+}
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--nav-text);
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;   /* space between items */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--nav-text);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a, nav ul li button {
+  color: var(--nav-text);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+/* Add spacing so sections don’t overlap */
+body {
+  padding-top: 80px;
+}
+
+/* =======================
+   Sections
+======================= */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+#home p {
+  text-align: center;
+  padding:20px 60px 20px 60px   ;
+}
+#about p {
+  text-align: center ;
+  padding: 20px 60px 20px 60px  ;                
+                
+}
+
+section h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+section h6 {
+  font-size: xx-large;
+  margin-top: 0;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+section h1 {
+  margin-top: 0;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: square;
+  padding-left: 100px;
+  text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #0073e6;
+    color: white;
+}
+
+
+
+
+/* =======================
+   Forms
+======================= */
+form input, form textarea, form button {
+  display: block;
+  width: 97%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+form button {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+.hidden{
+  display: none;
+}
